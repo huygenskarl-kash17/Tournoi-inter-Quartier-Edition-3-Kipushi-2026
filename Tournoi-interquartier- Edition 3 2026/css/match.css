@@ -1,0 +1,402 @@
+/* =========================================================
+   PAGE MATCHS — DESIGN SOBRE & PROFESSIONNEL (type tableau
+   de bord sportif)
+   ========================================================= */
+
+.calendrier{ padding-bottom:10px; }
+
+/* --- BANNIERE OUVERTURE / FINALE --- */
+.match-hero{
+  position:relative;
+  max-width:1100px;
+  height:360px;
+  margin:0 auto 30px;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:var(--ombre-lg);
+}
+
+.match-hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(0.5) saturate(1.1);
+}
+
+.match-hero .hero-content{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+
+.match-hero .stage-label{
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:0.78rem;
+  font-weight:700;
+  color:var(--or);
+  margin-bottom:14px;
+}
+
+.match-hero h2{
+  color:#fff;
+  font-size:2.1rem;
+  font-family:'Poppins', sans-serif;
+  font-weight:800;
+  letter-spacing:0.5px;
+}
+
+.match-hero h2 span{
+  color:var(--or);
+  font-weight:400;
+  font-size:1.3rem;
+  margin:0 14px;
+}
+
+/* --- LISTE DE MATCHS (phase de groupe) --- */
+.match-list{
+  max-width:900px;
+  margin:0 auto 60px;
+  padding:0 30px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.match-row{
+  display:flex;
+  align-items:center;
+  background:var(--fond);
+  border:1px solid var(--bordure);
+  border-radius:var(--rayon-sm);
+  padding:14px 22px;
+  transition:var(--transition);
+}
+
+.match-row:hover{
+  box-shadow:var(--ombre-md);
+  border-color:var(--bleu);
+  transform:translateX(4px);
+}
+
+.match-row .team{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex:1;
+  font-weight:600;
+  font-size:0.92rem;
+  color:var(--texte);
+}
+
+.match-row .team.away{
+  justify-content:flex-end;
+  text-align:right;
+}
+
+.team-badge{
+  width:36px;
+  height:36px;
+  min-width:36px;
+  border-radius:50%;
+  background:var(--bleu-clair);
+  color:var(--bleu-fonce);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  font-size:0.78rem;
+  font-family:'Poppins', sans-serif;
+}
+
+.match-row .vs{
+  padding:0 22px;
+  font-family:'Poppins', sans-serif;
+  font-weight:800;
+  color:var(--or-fonce);
+  font-size:0.85rem;
+}
+
+/* --- PARCOURS ELIMINATOIRE (quarts / demi / finale) --- */
+.bracket-stages{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  max-width:1200px;
+  margin:0 auto 60px;
+  padding:0 20px;
+  overflow-x:auto;
+}
+
+.bracket-round{
+  flex:1;
+  min-width:210px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  justify-content:center;
+}
+
+.bracket-round h4{
+  text-align:center;
+  color:var(--bleu-fonce);
+  font-family:'Poppins', sans-serif;
+  font-size:0.82rem;
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+  margin-bottom:6px;
+}
+
+.bracket-arrow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--bordure);
+  font-size:1.4rem;
+  min-width:24px;
+}
+
+.match-box{
+  background:var(--fond);
+  border:1px solid var(--bordure);
+  border-radius:var(--rayon-sm);
+  padding:14px 16px;
+  box-shadow:var(--ombre-sm);
+  transition:var(--transition);
+}
+
+.match-box:hover{
+  box-shadow:var(--ombre-md);
+  border-color:var(--bleu);
+}
+
+.match-box .team-line{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+  padding:6px 0;
+  font-weight:600;
+  font-size:0.82rem;
+  color:var(--texte);
+}
+
+.match-box .team-line .label{
+  flex:1;
+  min-width:0;
+  overflow-wrap:break-word;
+}
+
+.match-box .team-line:first-child{
+  border-bottom:1px dashed var(--bordure);
+}
+
+.match-box .team-line span.pos{
+  flex-shrink:0;
+  font-size:0.68rem;
+  color:var(--texte-doux);
+  font-weight:500;
+}
+
+/* --- DIAGRAMME --- */
+.diagramme-container{
+  max-width:800px;
+  margin:0 auto 30px;
+  text-align:center;
+  padding:0 30px;
+}
+
+.diagramme-container img{
+  border-radius:var(--rayon);
+  box-shadow:var(--ombre-md);
+  border:1px solid var(--bordure);
+}
+
+.download-btn-container{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+/* --- RESPONSIVE --- */
+@media(max-width:900px){
+  .match-hero{ height:260px; }
+  .match-hero h2{ font-size:1.5rem; }
+  .match-row .team{ font-size:0.8rem; }
+  .bracket-stages{ padding:0 12px; }
+}
+
+@media(max-width:600px){
+  .match-row{ padding:12px 14px; }
+  .team-badge{ width:30px; height:30px; font-size:0.68rem; }
+  .match-row .vs{ padding:0 10px; }
+}
+
+/* =========================================================
+   JOURNÉES DE LA PHASE DE GROUPE (3 matchs par jour)
+   ========================================================= */
+
+.journee-bloc{
+  max-width:900px;
+  margin:0 auto 50px;
+  padding:0 30px;
+}
+
+.journee-header{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:18px;
+}
+
+.journee-badge{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  background:linear-gradient(135deg, var(--bleu), var(--bleu-fonce));
+  color:#fff;
+  padding:10px 22px;
+  border-radius:50px;
+  font-family:'Poppins', sans-serif;
+  font-weight:700;
+  font-size:0.95rem;
+  box-shadow:0 8px 18px rgba(11,94,168,0.28);
+}
+
+.journee-badge i{ color:var(--or); }
+
+.journee-date{
+  color:var(--texte-doux);
+  font-size:0.85rem;
+  font-weight:600;
+}
+
+.journee-date .sep{ margin:0 6px; color:var(--bordure); }
+
+.match-row{
+  position:relative;
+}
+
+.match-heure{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  position:absolute;
+  top:-11px;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--or);
+  color:var(--bleu-fonce);
+  font-size:11px;
+  font-weight:800;
+  padding:3px 12px;
+  border-radius:50px;
+  box-shadow:0 4px 10px rgba(245,166,35,0.4);
+}
+
+/* =========================================================
+   PARCOURS ELIMINATOIRE — VERSION "MAGIQUE"
+   ========================================================= */
+
+.bracket-stages{
+  gap:0;
+  position:relative;
+}
+
+.round-banner{
+  display:block;
+  clip-path:polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+  color:#fff;
+  padding:12px 20px 14px;
+  font-family:'Poppins', sans-serif;
+  font-weight:700;
+  font-size:0.8rem;
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+  text-align:center;
+  margin-bottom:22px;
+}
+
+.ronde-quart .round-banner{ background:linear-gradient(135deg, var(--bleu), var(--bleu-fonce)); }
+.ronde-demi .round-banner{ background:linear-gradient(135deg, #8e44ad, #5c2d70); }
+.ronde-finale .round-banner{ background:linear-gradient(135deg, var(--or), var(--or-fonce)); }
+
+.bracket-connector{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:44px;
+}
+
+.bracket-connector .flow-line{
+  width:44px;
+  height:4px;
+  border-radius:10px;
+  background:linear-gradient(90deg, var(--bleu), var(--or), var(--bleu));
+  background-size:200% 100%;
+  animation:flowGradient 3s linear infinite;
+}
+
+@keyframes flowGradient{
+  from{ background-position:0% 0; }
+  to{ background-position:200% 0; }
+}
+
+.match-box{
+  position:relative;
+  padding-top:20px;
+  overflow:hidden;
+}
+
+.match-box::before{
+  content:"";
+  position:absolute;
+  top:0; left:0;
+  width:0; height:0;
+  border-style:solid;
+  border-width:0 0 30px 30px;
+  border-color:transparent transparent var(--bleu-clair) transparent;
+}
+
+.ronde-demi .match-box::before{ border-color:transparent transparent #f1e3f7 transparent; }
+.ronde-finale .match-box::before{ border-color:transparent transparent #fdf1de transparent; }
+
+.ronde-finale .match-box{
+  box-shadow:0 0 0 2px var(--or), var(--ombre-md);
+  animation:pulseOr 2.6s ease-in-out infinite;
+}
+
+@keyframes pulseOr{
+  0%, 100%{ box-shadow:0 0 0 2px var(--or), var(--ombre-sm); }
+  50%{ box-shadow:0 0 18px 3px rgba(245,166,35,0.55), var(--ombre-md); }
+}
+
+.ronde-finale .match-box i.fa-trophy{
+  color:var(--or);
+  margin-right:6px;
+}
+
+@media(max-width:700px){
+  .journee-header{ flex-wrap:wrap; }
+  .match-heure{ position:static; transform:none; display:inline-flex; margin-bottom:8px; }
+
+  .bracket-stages{
+    flex-direction:column;
+    overflow-x:visible;
+    align-items:stretch;
+    gap:6px;
+  }
+
+  .bracket-round{ width:100%; min-width:0; }
+
+  .bracket-connector{
+    justify-content:center;
+    transform:rotate(90deg);
+    margin:-4px 0;
+  }
+}

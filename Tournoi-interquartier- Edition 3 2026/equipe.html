@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equipes - Tournoi Inter Quartier de Kipushi</title>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/equipe.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+<div id="toast"></div>
+<header>
+<div class="menu-toggle">☰</div>
+<div class="logo">
+    <img src="images/logo.png" alt="logo" class="logo-img">
+    <span>Championnat de Football</span>
+</div>
+<nav>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="championnat.html">Championnat</a></li>
+<li><a href="equipe.html" class="active">Equipe</a></li>
+<li><a href="match.html">Matchs</a></li>
+<li><a href="classement.html">Classement</a></li>
+<li><a href="annonces.html">Annonces</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="historique.html">Historique</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="equipe">
+<h1 class="titre">Nos Équipes</h1>
+<p class="equipe-sub reveal">12 équipes venues des quartiers de Kipushi s'affrontent cette saison.</p>
+
+<div class="filtres reveal">
+    <button class="filtre-btn actif" data-filtre="tous">Toutes</button>
+    <button class="filtre-btn" data-filtre="a">Groupe A</button>
+    <button class="filtre-btn" data-filtre="b">Groupe B</button>
+    <button class="filtre-btn" data-filtre="c">Groupe C</button>
+    <button class="filtre-btn" data-filtre="d">Groupe D</button>
+</div>
+
+<div class="container">
+<div class="cards stagger">
+<div class="card equipe-card grp-a reveal" style="--i:0" data-groupe="a">
+    <img src="images/equipe1.jpg" alt="Katshoma 1 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe A</span>
+        <h2>Katshoma 1 Fc</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-a reveal" style="--i:1" data-groupe="a">
+    <img src="images/equipe2.jpg" alt="Uhuru 1 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe A</span>
+        <h2>Uhuru 1 Fc</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-a reveal" style="--i:2" data-groupe="a">
+    <img src="images/equipe3.jpg" alt="Kamalenge 1 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe A</span>
+        <h2>Kamalenge 1 Fc</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-b reveal" style="--i:3" data-groupe="b">
+    <img src="images/equipe4.jpg" alt="Mungoti 1 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe B</span>
+        <h2>Mungoti 1 Fc</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-b reveal" style="--i:0" data-groupe="b">
+    <img src="images/equipe5.jpg" alt="Kalubamba 1 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe B</span>
+        <h2>Kalubamba 1 Fc</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-b reveal" style="--i:1" data-groupe="b">
+    <img src="images/equipe6.jpg" alt="Lumumba 1 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe B</span>
+        <h2>Lumumba 1 Fc</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-c reveal" style="--i:2" data-groupe="c">
+    <img src="images/equipe7.jpg" alt="Uhuru 2 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe C</span>
+        <h2>Uhuru 2 Fc</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-c reveal" style="--i:3" data-groupe="c">
+    <img src="images/equipe8.jpg" alt="Kamalenge 2 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe C</span>
+        <h2>Kamalenge 2 Fc</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-c reveal" style="--i:0" data-groupe="c">
+    <img src="images/equipe9.jpg" alt="Lumumba 2 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe C</span>
+        <h2>Lumumba 2 Fc</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-d reveal" style="--i:1" data-groupe="d">
+    <img src="images/equipe10.jpg" alt="Kalubamba 2">
+    <div class="equipe-info">
+        <span class="badge">Groupe D</span>
+        <h2>Kalubamba 2</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-d reveal" style="--i:2" data-groupe="d">
+    <img src="images/equipe11.jpg" alt="Katshoma 2 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe D</span>
+        <h2>Katshoma 2 Fc</h2>
+    </div>
+</div>
+<div class="card equipe-card grp-d reveal" style="--i:3" data-groupe="d">
+    <img src="images/equipe12.jpg" alt="Mungoti 2 Fc">
+    <div class="equipe-info">
+        <span class="badge">Groupe D</span>
+        <h2>Mungoti 2 Fc</h2>
+    </div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<p>© 2026 Tournois MAMADU NDALA</p>
+<div class="footer-icons">
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://wa.me/243849517626"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+<a href="#"><i class="fa-brands fa-github"></i></a>
+<a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+</div>
+</footer>
+<script defer src="js/Script.js"></script>
+<script defer src="js/equipe.js"></script>
+</body>
+</html>
