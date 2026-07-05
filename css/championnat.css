@@ -1,0 +1,25 @@
+.championnat{ padding-bottom:40px; }
+
+.carte-texte{
+  max-width:900px;
+  margin:0 auto 40px;
+  padding:36px 40px;
+}
+
+.carte-texte h2{
+  color:var(--bleu-fonce);
+  font-size:1.3rem;
+  margin-bottom:20px;
+  text-align:center;
+}
+
+.carte-texte p{
+  color:var(--texte-doux);
+  line-height:1.8;
+  margin-bottom:18px;
+  text-align:justify;
+}
+
+@media(max-width:700px){
+  .carte-texte{ padding:26px; }
+}
