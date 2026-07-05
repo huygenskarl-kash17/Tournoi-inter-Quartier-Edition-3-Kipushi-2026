@@ -1,4 +1,0 @@
-﻿# Tournois-Inter-Quartier-Kipushi
-# Tournois-Inter-Quartier-Kipushi
-# Tournois-Inter-Quartier-Kipushi.
-
